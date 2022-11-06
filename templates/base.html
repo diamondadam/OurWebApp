@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="en-us" http-equiv="Content-Language" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Municipal Authority of Westmorland County</title>
+  <meta name="description" content="Use Municipal Authority of Westmorland County - Leak Estimation">
+  <meta property="og:description" content="Use Municipal Authority of Westmorland County - Leak Estimation">
+</head>
+
+<section class="hero is-small">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <div class="container">
+          {% load static %}
+          <p><img src="{% static 'logo.png' %}" alt="MAWC Logo" width="400" 
+            height="75"></p>
+
+        </div>
+        <span class="navbar-burger" data-target="navbarMenuHeroA">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenuHeroA" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item is-active" href="#">
+            Home
+          </a>
+          <a class="navbar-item" href="#">
+            EAMPortal
+          </a>
+          <a class="navbar-item" href="#">
+            Water Leaks
+          </a>
+          <a class="navbar-item" href="#">
+            Mileage
+          </a>
+          <span class="navbar-item">
+            <a class="button is-primary is-inverted">
+              {% load static %}
+              <span class="icon">
+                <img src="{% static 'user_icon.png' %}" alt="MAWC Logo">
+              </span>
+              <span>Settings</span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="hero-body">
+    <h1 class="title"><p class="ml-4">Welcome, {{ user.username|default:'Guest' }}</p></h1>
+    <h2 class="subtitle"><p class="ml-4">Email</p></h2>
+  </div>
+</section>
+
+</html>
