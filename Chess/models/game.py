@@ -3,6 +3,7 @@ class Team():
     def __init__(self, wob:bool) -> None:
         self.wob = wob
         self.graveyard = []
+        
 class Game():
     def __init__(self) -> None:
         self.board = Board()
