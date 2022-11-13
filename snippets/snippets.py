@@ -30,21 +30,23 @@
     #         return False
 
     #     return True
-def is_valid(self, point):
-    for vector in self.vectors:
-        # If it is a dynamically limited piece
-    #if vector.magnitude == None:
-        # Find the limit in this vector
-        #vector.magnitude = self.find_limit(vector)
-        # If point lies between (inclusive) it is valid
-        if point in vector.get_points():
-            return True
-        # if self.isBetween(self.pos, vector.point, point):
-        #     return True
-        # Reset the Vector limit
-        # vector.magnitude = None
 
-        # elif point in vector.get_points():
-        #     # Else if the moveset is static
-        #     return True
-    return False
+    
+# def is_valid(self, point):
+#     for vector in self.vectors:
+#         # If it is a dynamically limited piece
+#     #if vector.magnitude == None:
+#         # Find the limit in this vector
+#         #vector.magnitude = self.find_limit(vector)
+#         # If point lies between (inclusive) it is valid
+#         if point in vector.get_points():
+#             return True
+#         # if self.isBetween(self.pos, vector.point, point):
+#         #     return True
+#         # Reset the Vector limit
+#         # vector.magnitude = None
+
+#         # elif point in vector.get_points():
+#         #     # Else if the moveset is static
+#         #     return True
+#     return False
