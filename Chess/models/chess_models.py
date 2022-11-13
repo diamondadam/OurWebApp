@@ -63,12 +63,12 @@ class Vector():
         self.magnitude = magnitude
 
     def get_points(self):
+        #TODO Check for pieces
         points = []
         for i in range(1, self.magnitude):
             if (self.point * i).is_off():
                 return points
             points.append(self.point * i)
-
         return points
 
 
