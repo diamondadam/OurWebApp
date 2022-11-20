@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+    <title>Our Epic Web App</title>
+    <meta name="description" content="Our Epic Web App built with teamwork">
+    <meta property="og:description" content="our od description">
+  </head>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta content="en-us" http-equiv="Content-Language" />
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
-  <title>Our Epic Web App</title>
-  <meta name="description" content="Our Epic Web App built with teamwork">
-  <meta property="og:description" content="our od description">
-</head>
+  <section class="hero is-small">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="navbar-brand">
+          
+          <div class="container">
+            {% load static %}
+            <p><img src="{% static 'logo.jpg' %}" alt="Logo" class="test"></p>
+          </div>
 
-<section class="hero is-small">
-  <div class="hero-head">
-    <nav class="navbar">
-      <div class="navbar-brand">
-        
-        <div class="container">
-          {% load static %}
-          <p><img src="{% static 'logo.jpg' %}" alt="Logo" style="width:250px;height:100px;" class="test"></p>
-        </div>
-
-        <span class="navbar-burger" data-target="navbarMenuHeroA">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </div>
-      <div id="navbarMenuHeroA" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item is-active" href="#" class="navhome">
-            Home
-          </a>
-          <a class="navbar-item" href="#">
-            Your Profile
-          </a>
-          <a class="navbar-item" href="#">
-            Chess App
-          </a>
-          <a class="navbar-item" href="#">
-            PLC Simulator
-          </a>
-          <span class="navbar-item">
-            <a class="button is-primary is-inverted">
-              {% load static %}
-              <span class="icon">
-                <img src="{% static 'user_icon.jpg' %}" alt="Logo">
-              </span>
-              <span>Settings</span>
-            </a>
+          <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
           </span>
         </div>
-      </div>
-    </nav>
-  </div>
-  <div class="hero-body">
-    <h1 class="title"><p class="ml-4">Welcome, {{ user.username|default:'Guest' }}</p></h1>
-    <h2 class="subtitle"><p class="ml-4">Email : {{ user.email|default:'n/a' }}</p></h2>
-  </div>
-</section>
-
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active" href="#" class="navhome">
+              Home
+            </a>
+            <a class="navbar-item" href="#">
+              Your Profile
+            </a>
+            <a class="navbar-item" href="#">
+              Chess App
+            </a>
+            <a class="navbar-item" href="#">
+              PLC Simulator
+            </a>
+            <span class="navbar-item">
+              <a class="button is-primary is-inverted">
+                {% load static %}
+                <span class="icon">
+                  <img src="{% static 'user_icon.jpg' %}" alt="Logo">
+                </span>
+                <span>Settings</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="hero-body">
+      <h1 class="title"><p class="ml-4">Welcome, {{ user.username|default:'Guest' }}</p></h1>
+      <h2 class="subtitle"><p class="ml-4">Email : {{user.email|default:'n/a' }}</p></h2>
+    </div>
+  </section>
+  <body>
+    <img src="static\chess.jpg" alt="A game of chess" class="background">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+  <footer>
+    <div class="about">
+      <p class="to-home"><a href="#">Back to home</a>></p>
+    </div>
+    <div class="social"> 
+      <a href="#"><ion-icon class="icon" name="logo-github"></ion-icon></a>
+      <a href="#"><ion-icon class="icon" name="logo-discord"></ion-icon></a>
+    </div>
+  </footer>
 </html>

@@ -1,3 +1,55 @@
 .test{
     border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 15px;
 }
+
+footer{
+    opacity: 0.6;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: lightgrey;
+    min-height: 2.5rem;
+}
+
+.about{
+    padding-left: 10px;
+    float: left;
+}
+
+.social{
+    padding-right: 10px;
+    float: right;
+}
+
+.icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.hero-head{
+    background-color: lightgrey;
+    height: 0px;
+    margin-bottom: 0%;
+}
+
+.ml-4{
+    padding-left: 80px;
+}
+
+section{
+    background-color: lightgrey;
+}
+
+.to-home{
+   padding-top: 8px;
+}
+
