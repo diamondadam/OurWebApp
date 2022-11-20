@@ -1,7 +1,10 @@
 {
     "python.testing.pytestArgs": [
-        "test"
+        "test",
+        "-c",
+        "test/pytest.ini",
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "python.terminal.executeInFileDir": true
 }
