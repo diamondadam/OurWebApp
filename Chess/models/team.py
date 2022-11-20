@@ -6,7 +6,6 @@ log = logging.getLogger('dan_sucks' + __name__)
 
 
 class Team():
-
     def __init__(self, **kwargs) -> None:
         self.name: str = str(kwargs['name']).strip().lower().capitalize()
         self.check: bool = False
