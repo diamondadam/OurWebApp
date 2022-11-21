@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+          "label": "Run Backend Server",
+          "type": "shell",
+          "command": "python -m flask --app ${cwd}\\backend-server\\server.py",
+          "group": "build",
+          "presentation": {
+            "reveal": "always",
+            "panel": "new"
+          }
+        }
+    ]
+}
